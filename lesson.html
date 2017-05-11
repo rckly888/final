@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lessons - Easy Violin</title>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/balloon.js"></script>
+<script type="text/javascript" src="js/png.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">EASY VIOLIN   <span><img src="images/logo.png" width="20px"/></span></a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li  class="active"><a href="basic1.html">Lessons</a></li>
+        <li><a href="#">Resources</a></li>
+        <li><a href="#">Plan Price</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+       <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+       <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+     </ul>
+</div>
+</nav>
+
+<div class="wrap">
+    <div class="row">
+      <div class="col-md-6" id="Area1">
+         <center>
+           <div class="panel panel-default">
+              <div class="panel-heading"><strong>Demo</strong><span class="right"><a href="#null" onclick="show('Area1')"> Hide</a></span></div>
+                  <div class="panel-body">
+                      <div class="vioGraphic">
+                        <div id="wrapper1">
+                        	<img src="images/finger.png" id="balloon1" style="top: 12.7441px; left: 784.454px; ">
+                        	<img src="images/finger.png" id="balloon2" style="top: 235.093px; left: 784.454px; ">
+                        	<img src="images/finger.png" id="balloon3" style="top: 359.42px; left: 784.454px; ">
+                        	<img src="images/finger.png" id="balloon4" style="top: 259.495px; left: 784.454px; ">
+                        </div>
+                      </div>
+                  </div>
+          </div>
+         </center>
+    </div>
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading"><strong>Sheet Music</strong><span class="right"><a href="#">Hide</a></span></div>
+            <div class="panel-body">
+                <form>
+              Difficulty Level:
+                  <input type="radio" name="reader" value="reader1"  onClick="changeImage('images/music1.jpg');" checked="true"> 1
+                  <input type="radio" name="reader" value="reader1"  onClick="changeImage('images/music2.jpg');"> 2
+                  <input type="radio" name="reader" value="reader1"  onClick="changeImage('images/music3.png');"> 3
+                </form>
+                <div class="vioMusic">
+                     <img src="images/music1.jpg" class="sheetMusic" name="theimage" id="theimage">
+
+                </div>
+            </div>
+       </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+           <div class="panel panel-default">
+              <div class="panel-heading"><strong>Personal Note</strong><span class="right"><a href="#">Hide</a></span></div>
+                  <div class="panel-body">
+                      <textarea class="form-control" rows="3">Please enter your personal note here.</textarea>
+                      <button type="submit" class="btn btn-danger right" onclick="myFunction()">Submit</button> </br></br>
+<dialog id="myDialog">Your note has been saved!</dialog>
+                      <div class="comment">
+                      <h4>Previous Notes</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                      </div>
+                  </div>
+          </div>
+    </div>
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading"><strong>Audio Control</strong><span class="right"><a href="#">Hide</a></span></div>
+            <div class="panel-body">
+              <center>
+              <audio controls>
+                   <source src="sound/Y.mp3" type="audio/mpeg" />
+                   <a href="sound/Y.mp3">horse</a>
+              </audio>
+            </center>
+            </div>
+       </div>
+       <div class="panel panel-default">
+         <div class="panel-heading"><strong>Resource Recommendation</strong><span class="right"><a href="#"><span class="glyphicon glyphicon-refresh"></span> Refresh</a></span></div>
+           <div class="panel-body">
+               <ol class="recommendation">
+                 <li><a href="basic2.html">What is the right way to hold a violin?</a></li>
+                 <li><a href="basic3.html">How to Read Music Notes</a></li>
+                 <li><a href="#">Background Story of < Cindy ></a></li>
+                 <li><a href="#">Top 10 Mistakes Violin Beginners Make</a></li>
+                 <li><a href="#">Violin Tuning Guide for Beginners</a></li>
+               </ol>
+           </div>
+      </div>
+      </div>
+    </div>
+</div>
+</body>
+</html>
